@@ -1,0 +1,337 @@
+/*
+ *Smart Traveller
+ *
+ * Color palette
+ * ---------------
+ * orange: #DB6220
+ * blue: #008CBA
+ * red: #ED2726
+ * light-grey: #CCCCCC
+ * dark-grey: #494749
+ *
+----------------------------------------*/
+@font-face {
+    font-family: fancy-me;
+    src: url(../font/fancy-me.otf);
+}
+
+@font-face {
+    font-family: holla;
+    src: url(../font/holla.ttf);
+}
+
+@font-face {
+    font-family: soft-elegance;
+    src: url(../font/soft_elegance.ttf);
+}
+
+h1{
+	font-family: fancy-me;
+	font-size: 4.2rem;
+	font-weight: bold;
+	color:#DB6220;
+}
+
+h2{	
+	font-family: fancy-me;
+	text-align: center;
+	font-size: 3.5rem;
+}
+
+h5{	text-align: center;}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), #DB6220, rgba(0,0,0,0)); 
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), #DB6220, rgba(0,0,0,0)); 
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), #DB6220, rgba(0,0,0,0)); 
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), #DB6220, rgba(0,0,0,0)); 
+	color: #DB6220;
+	opacity: 0.8;
+}
+.contain-to-grid{
+	background-color: #0D9DC5;
+	padding-bottom: 0.5rem;
+}
+
+nav.top-bar {
+	background-color: #0D9DC5;
+	text-align:center;
+}
+
+nav.top-bar ul li a{
+	font-family: holla;
+	font-size: 2.3rem;
+	color: #67B8DE;
+}
+
+nav.top-bar ul li a:hover{
+	opacity: 0.8;
+}
+
+#welcome-msg{
+	margin-left: 2rem;
+}
+
+#background-intro{
+	position: absolute;
+	right: 0; left: 0;
+	top: 0; bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+  	background: url('../img/wallpaper/logo.svg') no-repeat;
+	background-size: cover;
+	background-position:50% 50%;
+}
+
+.hp-box{
+	padding-top:55%;
+}
+
+.opaque{
+	opacity:.5;
+}
+
+.black{
+	color:#000000;
+}
+
+.sub-title{
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+}
+
+.sub-content{
+	padding-top: 2.5rem;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+.btn-container{
+	text-align:center;
+}
+
+.btn-container .button, .btn-container button {
+  margin: 2rem auto;
+  border-radius: .2857rem;
+  box-shadow: 0 0 0 1px transparent inset,0 0 0 0 rgba(39,41,43,.15)inset;
+  background-color: #0D9DC5;
+}
+
+.btn-container .button:hover, .btn-container button:hover{
+  background-color: #00ABD6;
+}
+
+
+#background-form{
+  position: absolute;
+  right: 0; left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  background: url('../img/wallpaper/holidays.svg') no-repeat;
+  background-size: cover;
+  background-position:50% 50%;
+}
+
+.prefix{color: #A17043;}
+
+.input-container{
+  padding-top: 30%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.input-temperature{padding-top: 1rem;}
+
+#range-temp .noUi-connect {
+  background: #0D9DC5;
+}
+
+
+/* Destinations page
+-------------------------------*/
+
+.destinations-title h1{
+	font-size: 3.5rem;
+	margin-top: 1rem;
+	text-align: center;
+	color: #008CBA;
+}
+
+.destinations-title hr{
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), #008CBA, rgba(0,0,0,0)); 
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), #008CBA, rgba(0,0,0,0)); 
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), #008CBA, rgba(0,0,0,0)); 
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), #008CBA, rgba(0,0,0,0)); 
+	color: #008CBA;
+	opacity: 0.8;
+}
+
+.destinations-container{
+}
+
+.progress {
+	margin-left: 0.2rem; 
+	margin-right: 0.2rem; 
+}
+
+.progress .cost, .label .cost{
+	background-color: rgba(0,140,186,1);
+
+}
+
+.progress .temp, .label .temp{
+	background-color: rgba(0,140,186,0.5);
+}
+
+.progress .visa, .label .visa{
+	background-color: rgba(0,140,186,0.2);
+}
+
+.legend{
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.legend .label{
+	font-size: 1rem;
+	width: 10rem;
+	padding: 0.2rem 0 0.2rem 0;
+	text-align: center;
+	-moz-border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -khtml-border-radius: .3rem;
+    border-radius: .3rem;
+}
+
+#cost{background-color: rgba(0,140,186,1);}
+#temp{background-color: rgba(0,140,186,0.5);}
+#visa{color:rgba(0,140,186,1); background-color: rgba(0,140,186,0.2); }
+
+.slick-prev{}
+
+.slick-next{}
+
+.destination-option{
+	margin-left: 1rem;
+	background-color: #CCCCCC;
+	-moz-border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -khtml-border-radius: .3rem;
+    border-radius: .3rem;
+}
+
+.destination-option img{
+	width: 100%;
+	height: 10rem;
+	margin-bottom: 1rem;
+}
+
+.progress{
+	height: 0.7rem;
+}
+
+.legend hr{
+	margin: 1rem 0 0 0;
+}
+
+.label{
+	margin-bottom: 0;
+}
+
+#map { 
+	height: 500px;
+	margin-top:4rem;
+}
+
+.info-title {
+	font-family: soft-elegance;
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color: #F26B23;
+	text-align: center;
+}
+
+.info-sub-title {
+	font-family: soft-elegance;
+	font-size: 2rem;
+	color: #008CBA;
+	text-align: center;
+}
+
+.info-sub-title::first-letter {
+   text-transform: uppercase;
+}
+
+.info-sub { 
+	font-family: soft-elegance;
+	font-size: 2rem;
+	color: #F26B23;
+	text-align: center;
+}
+
+.info-sub .info-sub-content{ 
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.flag-custom {
+	padding-top: 3rem;
+	font-size: 4rem;
+	padding-bottom: 0;
+}
+
+#weather-chart{
+    width: 100% !important;
+    max-width: 800px;
+    height: 100 !important;
+}
+
+#cost-chart{
+    width: 100% !important;
+    max-width: 400px;
+    height: 200 !important;
+}
+
+#infoResults {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-color: rgba(0,140,186,0.8);
+	border-style: solid;
+	border-radius: .2rem;
+	background-color: rgba(0,140,186,0.01);
+}
+
+
+
+.close-button {
+	font-size: 2rem;
+	text-align: right;
+}
+
+
+footer{
+	font-family: holla;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 1rem;
+	color: #00ABD6;
+}
+
+
+

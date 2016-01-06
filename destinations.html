@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Smart Traveller</title>
+	<link rel="stylesheet" href="assets/css/foundation.css" />
+	<link rel="stylesheet" href="assets/css/foundation-icons.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	
+	<link rel="stylesheet" href="assets/css/slick/slick/slick.css"/>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/flags/css/flag-icon.min.css" />
+
+	<script src="assets/js/vendor/jquery.js"></script>
+	<script src="assets/js/vendor/foundation/foundation.min.js"></script>
+	<script src="assets/js/vendor/Chart.js"></script>
+	
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="assets/js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+<div class="contain-to-grid sticky">
+	<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+		<ul>
+		  <li><a href="../smarttraveller">Smart Traveller</a></li>
+		</ul>
+	</nav>
+</div>	
+
+<div id="wrapper">
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="row">
+				<div class="large-12 destinations-title columns"  id="destinations">
+					<h1>Choose your destination</h1>
+					<hr>
+					<div class="destinations-container"></div>
+
+					<div class="legend">
+							<span class="label" id="cost"><i class="fa fa-euro"></i> Cost per day</span>
+							<span class="label" id="temp"><i class="fa fa-sun-o"></i></i> Temperature level</span>
+							<span class="label" id="visa"><i class="fa fa-plane"></i> Visa requirements</span>
+					</div>
+					<hr>
+				</div>
+			</div>	
+			<div id="info" class="large-12 columns">
+			</div>
+			<div id="map" class="large-12 medium-12 small-12 columns"></div>	
+		</div>	
+	</div>
+</div><!--wrapper-->
+
+<footer id="footer">&copy; 2015 SmartTraveller</footer>
+
+<script src="assets/css/slick/slick/slick.js"></script>
+<script src="assets/js/destinations.js"></script>
+
+</body>
+</html>	

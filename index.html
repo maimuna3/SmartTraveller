@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Smart Traveller</title>
+	<link rel="stylesheet" href="assets/css/foundation.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/font/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/js/noUiSlider.7.0.10/jquery.nouislider.min.css">
+</head>
+
+<body>
+
+<div class="contain-to-grid sticky">
+	<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+		<ul>
+		  <li><a href="../smarttraveller">Smart Traveller</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div id="wrapper">
+
+<div id="background-intro"></div>
+
+<div class="row">
+	<div class="large-12 columns">
+		<article class="main">
+
+			<div class="row">
+				<div class="large-12 columns hp-box btn-container">
+					<button id="start-app-btn" class="button radius">Travel Now</button>
+				</div>
+			</div>
+
+		</article>
+	</div>
+</div>
+
+<div class="row" id="input-form-container">
+	<div class="large-12 columns">
+
+		<article class="main">
+			<div id="background-form"></div>	
+			<div class="row">
+				<div class="large-12 columns">
+					
+						<div class="row input-container" >
+							<form name="input" action="destinations.html" method="GET">
+							
+							<div class="large-12 columns">
+								<div class="row collapse">
+									<h4>Travelling</h4>
+								    <div class="small-3 large-2 columns">
+								    	<span class="prefix">From</span>
+								    </div>
+								    <div class="small-9 large-10 columns">
+										<select name="origin" id="origin" data-placeholder="Select your country...">
+											<option value=""></option>
+											<option value="Cyprus">Cyprus</option>
+											<option value="Germany">Germany</option>
+											<option value="Mexico">Mexico</option>
+											<option value="Nigeria">Nigeria</option>
+											<option value="United States">United States</option>
+											<option value="United Kingdom">United Kingdom</option>
+										</select>
+									</div>
+								</div>
+
+								<h4>When</h4>
+								<div class="row collapse">
+								    <div class="small-3 large-2 columns">
+								    	<span class="prefix">Month</span>
+								    </div>
+								    <div class="small-9 large-10 columns">
+								    	<select name="month" id="month">
+								    		<option value=""></option>
+								    		<option value="jan"> January </option>
+								    		<option value="feb"> February </option>
+								    		<option value="mar"> March </option>
+								    		<option value="apr"> April </option>
+								    		<option value="may"> May </option>
+								    		<option value="jun"> June </option>
+								    		<option value="jul"> July </option>
+								    		<option value="ago"> August </option>
+								    		<option value="sep"> September </option>
+								    		<option value="oct"> October </option>
+								    		<option value="nov"> November </option>
+								    		<option value="dec"> December </option>
+								    	</select>
+								    </div>
+							 	</div>
+
+							 	<h4>Budget</h4>
+								<div class="row collapse">
+								    <div class="small-3 large-2 columns">
+								    	<span class="prefix"><i class="fa fa-eur"></i></span>
+								    </div>
+
+								    <div class="small-9 large-10 columns">
+								    	<input type="text" id="budget" name="budget" placeholder="For a single day...">
+								    </div>
+							 	</div>
+
+						    	<h4>Temperature</h4>
+
+								<div class="row collapse">
+									<div class="large-12 columns">
+										<div id="range-temp"></div>
+									</div>
+								</div>
+
+								<div class="row collapse input-temperature">
+									<div class="large-4 columns">
+										<select id="input-select-low" name="lowTemp"></select>
+									</div>
+									<div class="large-4 columns">
+										<select id="input-select-upper" name="highTemp"></select>
+									</div>
+								</div>
+								
+							</div><!--end of first-input-->
+
+							<div class="row">
+								<div class="large-12 columns btn-container">
+									<button id="destination-btn" class="button radius">Take me there</button>
+								</div>
+							</div><!--end of button-container-->
+
+							</form>
+						</div>		
+				</div>
+			</div>
+		
+		</article>
+	</div>
+</div>
+
+</div><!--wrapper-->
+<footer id="footer">&copy; 2015 SmartTraveller</footer>
+
+
+<script src="assets/js/vendor/modernizr.js"></script>
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="assets/js/vendor/foundation/foundation.min.js"></script>
+<script src="assets/js/noUiSlider.7.0.10/jquery.nouislider.all.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+
+</body>
+</html>
